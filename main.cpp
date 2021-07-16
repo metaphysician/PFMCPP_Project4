@@ -36,12 +36,112 @@
  6) After you finish defining each type/function, click the [run] button.  Clear up any errors or warnings as best you can.
  */
 
+
+struct FloatType
+{
+    float add( float lhs, float rhs );
+    float subtract( float lhs, float rhs );
+    float multiply( float lhs, float rhs );
+    float divide( float lhs, float rhs );
+};
+
+float FloatType::add(float lhs, float rhs)
+{
+    return lhs + rhs;
+}
+
+float FloatType::subtract(float lhs, float rhs)
+{
+    return lhs - rhs;
+}
+
+float FloatType::multiply(float lhs, float rhs)
+{
+    return lhs * rhs;
+}
+
+float FloatType::divide(float lhs, float rhs)
+{
+    //if result is fine
+    //return lhs / rhs;
+    //if result is !fine
+    //return blank line (how?)
+    //print warning
+    //print inf  
+}
+
+
+
+struct DoubleType
+{
+    double add(double lhs, double rhs);
+    double subtract(double lhs, double rhs);
+    double multiply(double lhs, double rhs);
+    double divide(double lhs, double rhs);
+};
+
+    double DoubleType::add(double lhs, double rhs)
+    {
+        return lhs + rhs;
+    }
+
+    double DoubleType::subtract(double lhs, double rhs)
+    {
+        return lhs - rhs;
+    }
+
+    double DoubleType::multiply(double lhs, double rhs)
+    {
+        return lhs * rhs;
+    }
+
+    double DoubleType::divide(double lhs, double rhs)
+    {
+        //if result is fine
+        //return lhs / rhs;
+        //if result is !fine
+        //return blank line (how?)
+        //print warning
+        //print inf  
+    }
+
+struct IntType
+
+{
+    int add(int lhs, int rhs);
+    int subtract(int lhs, int rhs);
+    int multiply(int lhs, int rhs);
+    int divide(int lhs, int rhs);
+};
+
+    int add(int lhs, int rhs)
+    {
+        return lhs + rhs;
+    }
+    int subtract(int lhs, int rhs)
+    {
+        return lhs - rhs;
+    }
+    int multiply(int lhs, int rhs)
+    {
+        return lhs * rhs;
+    }
+    int divide(int lhs, int rhs)
+    {
+        //if result is fine
+        //return lhs / rhs;
+        //if result is !fine
+        //print warning
+        //return lhs  
+    }
+
+
+
 /*
 your program should generate the following output EXACTLY.
 This includes the warnings.
 Use a service like https://www.diffchecker.com/diff to compare your output. 
 you should have no errors or warnings.
-
 
 clang++ -std=c++17 -Weverything -Wno-c++98-compat -Wno-missing-prototypes main.cpp && ./a.out
 result of ft.add(): 555.556
